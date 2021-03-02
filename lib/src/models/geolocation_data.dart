@@ -19,7 +19,7 @@ class GeolocationData{
             country: json['country'],
             countryCode: json['countryCode'],
             timezone: json['timezone'],
-            isp: json['isp']
+            isp: json['isp'],
             ip: json['query'],
             lat: json['lat'],
             lng: json['lon'],
