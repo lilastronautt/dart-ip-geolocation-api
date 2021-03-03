@@ -15,7 +15,6 @@ class GeolocationData{
         @required this.ip,
         @required this.lat,
         @required this.lng,
-        @required this.zip,
     });
 
     factory GeolocationData.fromJson(Map<String, dynamic> json){
@@ -30,7 +29,6 @@ class GeolocationData{
             ip: json['query'],
             lat: json['lat'],
             lng: json['lon'],
-            zip: json['zip'],
         );
     }
     Map<String, dynamic> toJson(){
@@ -45,7 +43,6 @@ class GeolocationData{
             'isp': this.isp,
             'lat': this.lat,
             'lng': this.lng,
-            'zip': this.zip,
         };
     }
 }
