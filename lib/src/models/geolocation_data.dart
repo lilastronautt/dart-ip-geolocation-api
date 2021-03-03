@@ -8,7 +8,7 @@ class GeolocationData{
         @required this.country,
         @required this.countryCode,
         @required this.region,
-        @required this.regionName
+        @required this.regionName,
         @required this.city,
         @required this.zip,
         @required this.timezone,
