@@ -2,7 +2,7 @@ import 'package:meta/meta.dart' show required;
 
 class GeolocationData{
     final String country, countryCode, timezone, ip, isp, city, region, regionName;
-    final double lat, lng, zip;
+    final double lat, lng;
 
     GeolocationData({
         @required this.country,
