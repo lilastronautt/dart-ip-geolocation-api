@@ -1,12 +1,16 @@
 import 'package:meta/meta.dart' show required;
 
 class GeolocationData{
-    final String country, countryCode, timezone, ip, isp;
-    final double lat, lng;
+    final String country, countryCode, timezone, ip, isp,city, region, regionName;
+    final double lat, lng,zip ;
 
     GeolocationData({
         @required this.country,
         @required this.countryCode,
+        @required this.region,
+        @required this.regionName
+        @required this.city,,
+        @required this.zip,
         @required this.timezone,
         @required this.isp,
         @required this.ip,
@@ -18,6 +22,10 @@ class GeolocationData{
         return GeolocationData(
             country: json['country'],
             countryCode: json['countryCode'],
+            region: json['region'],
+            regionName: json['regionName'],
+            city: json['city'],
+            zip: json['zip'],
             timezone: json['timezone'],
             isp: json['isp'],
             ip: json['query'],
@@ -29,6 +37,10 @@ class GeolocationData{
         return {
             'country': this.country,
             'countryCode': this.countryCode,
+            'region': this.region,
+            'regionname': this.regionName,
+            'city': this.city,
+            'zip': this.zip,
             'timezone': this.timezone,
             'ip': this.ip,
             'isp': this.isp,
