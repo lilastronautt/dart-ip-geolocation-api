@@ -10,12 +10,12 @@ class GeolocationData{
         @required this.region,
         @required this.regionName,
         @required this.city,
-        @required this.zip,
         @required this.timezone,
         @required this.isp,
         @required this.ip,
         @required this.lat,
         @required this.lng,
+        @required this.zip,
     });
 
     factory GeolocationData.fromJson(Map<String, dynamic> json){
@@ -25,12 +25,12 @@ class GeolocationData{
             region: json['region'],
             regionName: json['regionName'],
             city: json['city'],
-            zip: json['zip'],
             timezone: json['timezone'],
             isp: json['isp'],
             ip: json['query'],
             lat: json['lat'],
             lng: json['lon'],
+            zip: json['zip'],
         );
     }
     Map<String, dynamic> toJson(){
@@ -40,12 +40,12 @@ class GeolocationData{
             'region': this.region,
             'regionname': this.regionName,
             'city': this.city,
-            'zip': this.zip,
             'timezone': this.timezone,
             'ip': this.ip,
             'isp': this.isp,
             'lat': this.lat,
             'lng': this.lng,
+            'zip': this.zip,
         };
     }
 }
