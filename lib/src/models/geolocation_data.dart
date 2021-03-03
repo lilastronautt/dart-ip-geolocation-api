@@ -9,13 +9,13 @@ class GeolocationData{
         @required this.countryCode,
         @required this.region,
         @required this.regionName
-        @required this.city,,
+        @required this.city,
         @required this.zip,
         @required this.timezone,
         @required this.isp,
         @required this.ip,
         @required this.lat,
-        @required this.lng
+        @required this.lng,
     });
 
     factory GeolocationData.fromJson(Map<String, dynamic> json){
